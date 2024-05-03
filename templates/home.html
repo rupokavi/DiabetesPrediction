@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This Is page 1</title>
+    <style>
+        body {
+            background-image: url("{% static 'DProject/images/img1.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        div {
+            text-align: center;
+            margin-top: 200px;
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+        input[type="submit"] {
+            background-color: #4dc3ff;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        body {
+            background-image: url("{% static 'DiabetesPrediction/images/img1.png' %}");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+        <form action="predict">
+            <input type="submit" value="Let's get started">
+        </form>
+    </div>
+</body>
+</html>
